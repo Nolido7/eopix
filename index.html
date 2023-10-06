@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>E O PIX NADA AINDA?</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      a {
+        text-decoration: none;
+      }
+      .box {
+        font-size: 20px;
+        color: white;
+        height: 2000px;
+        width: 1500px;
+        border-radius: 10px;
+        background: #ffff;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .buttons-container {
+        display: flex;
+        justify-content: space-around;
+        height: 90px;
+        width: 600px;
+      }
+      button {
+        height: 80px;
+        width: 190px;
+        background: black;
+        border-radius: 5px;
+        color: blue;
+        font-size: 50px;
+        font-weight: 600px;
+      }
+             p {
+            font-size: 50px;
+            margin-top: 100px;
+            color: #ff000f;
+            font-weight: 40px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>ME MANDA UM PIX?</p>
+      <div class="buttons-container">
+        <button>
+          <a href="https://youtu.be/QRYErn1jGeY?si=a3oZjiZI_6YHLLnj">SIM</a>
+        </button>
+        <button id="no">NAO</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+    
+    button.addEventListener('mouseover', function () {
+      button.style.position = "absolute";
+      button.style.top = Math.random() * height + "px";
+      button.style.left = Math.random() * width + "px";
+      })
+  </script>
+</html>
